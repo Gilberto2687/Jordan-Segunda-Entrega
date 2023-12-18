@@ -1,0 +1,25 @@
+.main-anillos{
+    section{
+        div{
+            h1{}
+        }
+        .card{
+            width: 240px;
+            height: 450px;
+            margin: 30px;
+            border: 1px solid $color_1;
+            display: inline-block;
+            overflow: hidden;
+            background-color: $background-color_1;
+            h2{}
+            div{
+                p{}
+            }
+            div{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

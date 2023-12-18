@@ -1,0 +1,131 @@
+@media screen and (max-width: 760px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .logo1{
+            display: block;
+            width: 45px;
+            margin-left: 25px;
+        }
+        label{
+            display: block;
+            position: relative;
+            right: 25px;
+            img{
+                width: 30px;
+                background-color: $color_1;
+                margin-left: 280px;
+            }
+        }
+        a{
+            .logo-incio{
+                display: none;
+            }
+        }
+        .menu{
+            position: absolute;
+            top: 50px;
+            background-color: $background-color_1;
+            width: 50vw;
+            visibility: hidden;
+            z-index: 2;
+            ul{
+                flex-direction: column;
+                li{
+                    a{}
+                }
+            }
+        }
+        #btn_menu {
+            &:checked {
+                ~ {
+                    .menu {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+    }
+    .main-index{
+        section{
+            background-image: none;
+            div{
+                h1{}
+            }
+            div{
+                p{
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            div{
+                .home-j{
+                    width: 100%;
+                    margin-top: 100px;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .main-anillos{
+        section{
+            .card{
+                flex-direction: column;
+                margin-left: 19%;
+                position: relative;
+                z-index: 1;
+                h2{}
+                div{
+                    p{}
+                }
+                div{
+                    img{}
+                }
+            }
+        }
+    }
+    .main-deportes {
+        section{
+            div{
+                h1{}
+            }
+            div{
+                h2{}
+            }
+            div{
+                p{
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            div{
+                img{
+                   margin-top: 10px;
+                   margin-left: 25%;
+                   margin-bottom: 10px;
+                }
+            }
+        }
+    } 
+    .main-zapatillas{
+        section{
+            div{
+                h1{
+
+                }
+            }
+            div{
+                p{
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                }
+            }
+        }
+    } 
+}

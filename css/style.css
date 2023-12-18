@@ -1,161 +1,225 @@
-/* Estilos generales */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}  
-body{ /* fondo de mi pagina */
-    background-color: black; 
-    /* min-height: 100vh;
-    width: 100%; */
-} 
-header #btn_menu{
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+#home2 { /* posicionamiento color de los titulos y parrafos */
+  width: 20%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+/* tamaño de las imagenes */
+.campeon {
+  width: 25%;
+}
+
+.otros {
+  width: 50%;
+}
+
+.zapatos {
+  width: 33%;
+}
+
+.responsive-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  border: 3px solid grey;
+  background-color: black;
+}
+footer section div li a img {
+  width: 50px;
+}
+
+header {
+  border-bottom: 1px solid grey;
+}
+header #btn_menu {
+  display: none;
+}
+header label {
+  display: none;
+}
+header .logo1 {
+  display: none;
+}
+header a {
+  color: white;
+}
+header a img {
+  width: 75px;
+  padding: 20px;
+}
+header nav {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  border: 3px solid grey;
+}
+
+.main-index section {
+  background-image: url(../imagenes/home2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.main-index section .letras-index {
+  background-color: black;
+}
+.main-index section .letras-index div p {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main-anillos section .card {
+  width: 240px;
+  height: 450px;
+  margin: 30px;
+  border: 1px solid white;
+  display: inline-block;
+  overflow: hidden;
+  background-color: black;
+}
+.main-anillos section .card div img {
+  width: 100%;
+}
+
+.main-datos section div ol div li {
+  margin: 30px;
+  list-style: circle;
+  color: white;
+}
+
+.main-deportes section div p {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main-deportes section div img {
+  margin-left: 25%;
+}
+
+.main-zapatillas section div p {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo1 {
+    display: block;
+    width: 45px;
+    margin-left: 25px;
+  }
+  header label {
+    display: block;
+    position: relative;
+    right: 25px;
+  }
+  header label img {
+    width: 30px;
+    background-color: white;
+    margin-left: 280px;
+  }
+  header a .logo-incio {
     display: none;
-}   
-header label{
-    display: none;
-}
-header .logo1{
-    display: none;
-}
-header a img{/* tamaño y margen del Logo de la pagina */
-    width: 75px;
-    padding: 20px;
-}
-header nav ul li{/* menu navegable arriba a la derecha con estilos */
-    display: inline-block;
-    padding: 12px;
-    text-decoration: none;
-    /* color: white; */
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
-    border: 3px solid grey;
-}
-header nav ul li a{ /* Estilo de las letras del menu */
-    color: white;
-}
-header nav{/* posicionamiento de mi menu */
+  }
+  header .menu {
     position: absolute;
-    top: 25px;
-    right: 10px;
-}
-.main-anillos section .card{ /* Estilo de mis cards */
-    width: 240px;
-    height: 450px;
-    margin: 30px;
-    border: 1px solid white;
-    display: inline-block;
-    overflow: hidden;
+    top: 50px;
     background-color: black;
-}
-.main-anillos section .card img{/* Ancho que ocupa la imagen en las cards */
-    width: 100%;
-}
-.main-datos section ol li{/* lista con circulos blancos */
-    margin: 30px;
-    list-style: circle; color: white;
-}
-.main-index section{/* Imagen de fondo en mi pagina de home */
-    background-image: url(../imagenes/home2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-}
-#home2{/* posicionamiento color de los titulos y parrafos */
-    width: 20% ;
-}
-h1{
+    width: 50vw;
+    visibility: hidden;
+    z-index: 2;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  header #btn_menu:checked ~ .menu {
+    visibility: visible;
+  }
+  .main-index section {
+    background-image: none;
+  }
+  .main-index section div p {
     text-align: center;
-    color: white
-}
-p{
-    color: white;
-}
-header{
-    border-bottom: 1px solid grey;
-}
-h2{
-    color: white;
-}
-h3{
-    color: white;
-}
-.campeon{/* tamaño de las imagenes */
-    width: 25%;
-}
-.otros{
-    width: 50%;
-}
-.zapatos{
-    width: 33%;
-}
-.main-index section .letras-index{
-    background-color: black;
-}
-footer{/* Linea de separacion y fondo del footer */
-    border: 3px solid grey;
-    background-color: black;
-}
-footer li img{/* tamaño del icono de Netflix */
-    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .main-index section div .home-j {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+  }
+  .main-anillos section .card {
+    flex-direction: column;
+    margin-left: 19%;
+    position: relative;
+    z-index: 1;
+  }
+  .main-deportes section div p {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .main-deportes section div img {
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+  }
+  .main-zapatillas section div p {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
-/* @media screen and (max-width: 1024px){
-   
-} */
-
-
-@media screen and (max-width: 760px){
-    .main-index section{
-        background-image: none;
-    }   
-    header label{
-        display: block;
-        position: relative;
-        right: 25px;
-    }    
-    header label img{
-        width: 30px;
-        background-color: aliceblue;
-        margin-left: 280px;
-    }
-    header .logo1{
-        display: block;
-        width: 45px;
-        margin-left: 25px;
-    }
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-    }
-    .menu{
-        position: absolute;
-        top: 50px;
-        background-color: black;
-        width: 50vw;
-        visibility: hidden;
-        z-index: 2;
-    }
-    .logo-inicio{
-        display: none;
-    }
-    header nav ul{
-        flex-direction: column;
-    }
-    #btn_menu:checked ~ .menu{
-        visibility: visible;
-    }
-    .main-index section .home-j{
-        width: 100%;
-        margin-top: 100px;
-     position: relative;
-    }
-    .main-anillos section .card{
-        flex-direction: column;
-        margin-left: 19%;
-        position: relative;
-        z-index: 1;
-    }
-}
+/*# sourceMappingURL=style.css.map */

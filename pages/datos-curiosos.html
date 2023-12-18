@@ -3,28 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Jordan</title>
+  
   <!-- link de bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
   <!-- link a mi css -->
   <link rel="stylesheet" href="../css/style.css">  
-   <!-- logo que aparece en la pestaña de navegacion -->  
+   
+  <!-- logo que aparece en la pestaña de navegacion -->  
   <link rel="shortcut icon" href="../imagenes/logo1.jpg" type="image/x-icon">
 </head>
+
 <body>
+  <!-- Menu Hamburguesa responsive -->
   <header>
+    
     <img class="logo1" src="../imagenes/logo1.jpg" alt="logo">
-      <input type="checkbox" id="btn_menu">
-      <label for="btn_menu">
-        <img class="burguer" src="../imagenes/menu-hamburguesa.svg" alt="menu hamburguesa">
-      </label>
+    <input type="checkbox" id="btn_menu">
+      
+    <label for="btn_menu">
+       <img class="burguer" src="../imagenes/menu-hamburguesa.svg" alt="menu hamburguesa">
+    </label>
     
     <!-- Logo de mi pagina que me regresa al HOME -->
     <a href="../index.html"> 
       <img class=logo-inicio src="../imagenes/logo1.jpg" alt="logo de jordan">
     </a>
+    
     <nav class="menu"><!-- Menu navegable -->
+      
       <ul>
+       
         <li>
          <a class="boton" href="../index.html">Home</a>
         </li>
@@ -40,15 +51,22 @@
         <li>
           <a class="boton" href="./zapatillas.html">Zapatillas Jordan</a>
         </li>    
+      
       </ul>
+    
     </nav>
+  
   </header>
+  
+  <!-- Datos curiosos de Jordan -->
   <main class="main-datos">
     <section>
       <div>
         <h1>Datos impactantes de Michael Jordan</h1>
       </div> 
+      
       <div>
+        
         <ol> 
           <div>
             <li>Jordan fue descartado por su baja estatura en la secundaria</li>
@@ -58,8 +76,8 @@
           El día de los Enamorados de 1990 alguien se coló en el vestuario de los Bulls y le robó a 
              Michael, en aquel momento los utileros de Bulls no tenían otra camisa de MJ, por lo que jugó con la camisa 12.
             </li>
-            <div><!-- video de youtube -->
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GDkz0XmWoT0?si=5Z1K64NuRGFbb8R1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="responsive-container"><!-- video de youtube -->
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/GDkz0XmWoT0?si=5Z1K64NuRGFbb8R1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div> 
           <div>
@@ -91,8 +109,8 @@
              Jordan entró al vestuario visitante fumando y preguntó desafiante a sus rivales 
               “¿Quién va a marcarme hoy?”. Ese día Jordan anotó 54 puntos.
             </li>
-            <div><!-- video de youtube -->
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/f0YPXC7fih0?si=5qch-22eYB0he7hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="responsive-container"><!-- video de youtube -->
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/f0YPXC7fih0?si=5qch-22eYB0he7hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div> 
           <div> 
@@ -118,29 +136,48 @@
               Jimmy es un jugador estrella activo de la nba con una huella importante en los bulls y 
               el Miami Heat
             </li>
-            <div><!-- video de youtube -->
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/EVrPOkoG0oI?si=1Ltkxt0gHz5Srsev" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="responsive-container"><!-- video de youtube -->
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/EVrPOkoG0oI?si=1Ltkxt0gHz5Srsev" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
+        
         </ol>
+      
       </div>  
+    
     </section>    
+  
   </main>
+  
   <footer> <!-- Pie de mi pagina -->
+    
     <section class="d-flex" >
+      
       <div class="p-2 w-100">
-       <p>Pagina dedicada a los fanaticos de Jordan</p>
-       <p>Haciendo click en el logo de netflix, vas a ir directo al documental de Jordan</p>
+       
+        <p>Pagina dedicada a los fanaticos de Jordan</p>
+       
+        <p>Haciendo click en el logo de netflix, vas a ir directo al documental de Jordan</p>
+      
       </div>
+     
       <div class="p-2 flex-shrink-1">
+       
         <li><!-- icono de netflix navegable -->
+          
           <a href="https://www.netflix.com/ar/title/80203144" target="_blank"> 
             <img src="../imagenes/netflix.webp" alt="logo de netflix">
           </a>
+       
         </li>
       </div>
+    
     </section> 
+  
   </footer>
+  
+  <!-- Scrips de Boostrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>

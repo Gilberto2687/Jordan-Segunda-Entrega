@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}  
+
+body{
+    background-color: $background-color_1;
+}
+
+#home2{/* posicionamiento color de los titulos y parrafos */
+    width: 20% ;
+}
+h1{
+    text-align: center;
+    color: $color_1;
+}
+p{
+    color: $color_1;
+}
+h2{
+    color: $color_1;
+}
+h3{
+    color: $color_1;
+}
+/* tamaño de las imagenes */
+.campeon{
+    width: 25%;
+}
+.otros{
+    width: 50%;
+}
+.zapatos{
+    width: 33%;
+}
+.responsive-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}    
