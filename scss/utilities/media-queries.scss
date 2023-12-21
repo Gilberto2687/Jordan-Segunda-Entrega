@@ -3,12 +3,13 @@
         display: flex;
         justify-content: space-between;
         align-items:center;
+        
         .logo1{
             display: block;
             width: 45px;
             margin-left: 25px;
         }
-        label{
+        label {
             display: block;
             position: relative;
             right: 25px;
@@ -19,13 +20,16 @@
             }
         }
         a{
-            .logo-incio{
+            img{
                 display: none;
             }
         }
+        #btn_menu:checked ~ .menu{
+            visibility: visible;
+        }
         .menu{
             position: absolute;
-            top: 50px;
+            top: 80px;
             background-color: $background-color_1;
             width: 50vw;
             visibility: hidden;
@@ -34,15 +38,6 @@
                 flex-direction: column;
                 li{
                     a{}
-                }
-            }
-        }
-        #btn_menu {
-            &:checked {
-                ~ {
-                    .menu {
-                        visibility: visible;
-                    }
                 }
             }
         }
@@ -56,9 +51,7 @@
             }
             div{
                 p{
-                    text-align: center;
-                    margin-left: 10px;
-                    margin-right: 10px;
+                    @include text(20px, 20px)
                 }
             }
             div{
@@ -87,30 +80,6 @@
             }
         }
     }
-    .main-deportes {
-        section{
-            div{
-                h1{}
-            }
-            div{
-                h2{}
-            }
-            div{
-                p{
-                    text-align: center;
-                    margin-left: 10px;
-                    margin-right: 10px;
-                }
-            }
-            div{
-                img{
-                   margin-top: 10px;
-                   margin-left: 25%;
-                   margin-bottom: 10px;
-                }
-            }
-        }
-    } 
     .main-zapatillas{
         section{
             div{
@@ -120,9 +89,7 @@
             }
             div{
                 p{
-                    text-align: center;
-                    margin-left: 10px;
-                    margin-right: 10px;
+                    @include text(20px, 20px)
 
                 }
             }

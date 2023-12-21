@@ -1,17 +1,16 @@
 .main-index{
     section{
-        background-image: url(../imagenes/home2.jpg);
-        background-size: cover;
+        background-image: url(../imagenes/fondo-mejorado.jpg);
+        background-size: contain;
         background-repeat: no-repeat;
+
         width: 100%;
         .letras-index{
             background-color: $background-color_1;
             h1{}
             div{
                 p{
-                    text-align: center;
-                    margin-left: 10px;
-                    margin-right: 10px;
+                    @include text(20px, 20px)
                 }
             }
             div{

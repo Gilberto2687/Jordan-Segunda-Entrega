@@ -1,15 +1,15 @@
 .main-zapatillas{
+    
     section{
         div{
-            h1{}
+            h1{
+                @include text(30px, 30px)
+            }
         };
         div{
             p{
-                text-align: center;
-                margin-left: 10px;
-                margin-right: 10px;
+                @include text(30px, 30px)
             }
         }
-    }
-        
+    }   
 }

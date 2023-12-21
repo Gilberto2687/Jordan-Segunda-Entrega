@@ -4,10 +4,10 @@ header {
         display: none;
     }
     label{
-        display: none
+        @extend #btn_menu;
     }
     .logo1{
-        display: none;
+        @extend #btn_menu;
     }
     a{
      color: $color_1;

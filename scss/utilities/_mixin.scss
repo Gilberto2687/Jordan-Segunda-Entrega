@@ -1,0 +1,5 @@
+@mixin text ($margin-left, $margin-rigth){
+    text-align: center;
+    margin-left: $margin-left ;
+    margin-right: $margin-rigth;
+}

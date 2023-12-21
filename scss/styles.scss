@@ -1,10 +1,11 @@
 @import "./utilities/variables";
 @import "./utilities/global";
-@import "./components/footer";
 @import "./components/header";
+@import "./utilities/mixin";
 @import "./pages/main-index";
 @import "./pages/main-anillos";
-@import "./pages/main-datos";
-@import "./pages/main-deportes";
 @import "./pages/main-zapatillas";
+@import "./pages/main-datos";
+@import "./pages/main-info";
+@import "./components/footer";
 @import "./utilities/media-queries.scss";

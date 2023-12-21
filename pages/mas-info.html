@@ -14,7 +14,9 @@
   
   <!-- logo que aparece en la pestaña de navegacion -->   
   <link rel="shortcut icon" href="../imagenes/logo1.jpg" type="image/x-icon">
+
 </head>
+
 <body>
    
   <!-- Menu Hamburguesa responsive -->
@@ -42,13 +44,13 @@
          <a class="boton" href="./anillos-jordan.html">Anillos de Jordan</a>
         </li>
         <li>
-         <a class="boton" href="#">Zapatillas Jordan</a>
+         <a class="boton" href="./zapatillas.html">Zapatillas Jordan</a>
         </li>
         <li>
           <a class="boton" href="./datos-curiosos.html">Datos curiosos</a>
         </li>
         <li>
-          <a class="boton" href="./mas-info.html">+ Info</a>
+          <a class="boton" href="#">+ Info</a>
         </li>    
       
       </ul>
@@ -57,26 +59,45 @@
   
   </header>
 
-  <!-- Historia de Jordan como marca de zapatos -->
-  <main class="main-zapatillas"> 
+  <main class="main-info">
     <section>
+      
       <div>
-        <h1> Jordan y su impacto en el mundo de las zapatillas</h1>
-        <div>
-          <p>
-           Por su parte, Jordan era una gran promesa que venía de Carolina del Norte, y acababa de sumarse a los Chicago Bulls. El dueño de Nike, Phil Knight buscaba ganarle mercado a quien era, por entonces, su competidora: Reebook. Y para eso contrató a un basquetbolista.
-            Por supuesto, Jordan no era más que un jugador con mucho potencial. Pero era una apuesta que Nike estuvo decidido a hacer.
-            Nunca, hasta setiembred de 1984, una empresa de ropa deportiva había hecho eso: personalizar un producto al nivel de hacerlo único. Pero con Jordan, Nike estaba dispuesto a hacerlo. Hasta que nació un producto inigualable: las "Air Jordan". Zapatillas Nike especialmente diseñadas para Jordan y... de color rojo y negro. "El color del diablo", dijo Michael al verlas.
-            Lo demás fue puro éxito, aunque no sin contratiempos. La NBA no estaba dispuesta a que un jugador utilizara zapatillas de colores (recodemos, era 1984) porque la política de la Liga de los Estados Unidos eran calzados blancos.  Nike recibió multas por cada vez que Jordan jugó con las "Air" y las pagó a todos. La publicidad estaba haciendo efecto.
-            Jordan comenzó a volar. En su primera temporada en los Bulls, promedió 28.2 puntos por partido y sí, fue el "Novato del Año". Su rebeldía, su calidad y sus zapatillas especiales fueron irresistibles. Todo mundo quiso ser como él.En marzo e 1985 salieron a la venta las primeras "Air Jordan" para todo público. 
-            Tanto que un año después, a fines de 1985, Nike había vendido por la franquicia de "Air Jordan" la friolera de 100 millones de dólares. Increíble.
-            Desde aquel momento, Jordan y Nike no se separarían. Ambos se convirtieron en fenómenos mundiales y no hay manera de explicarlos por separado.
-          </p>
-        </div>
-        <div class="responsive-container"><!-- video de youtube -->
-          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/fRMrzlfIjx8?si=Ti8TTdrPoACp08-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-     </div> 
+        <h1>Formulario de Contacto</h1>
+      </div>
+
+      <div>
+        <h3>Ingresa tus datos para mas informacion, contenido exclusivo de la vida de Jordan, cada uno de sus movimientos actuales, tambien estaras participando en nuestro foro, donde intercambiamos informacion sobre Michael Jordan.</h3>
+      </div>
+      
+      <div>
+        
+        <form action="/procesar-formulario" method="post">
+          
+          <label class="tex-label" for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+    
+        
+          <label class="tex-label" for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+    
+        
+          <label class="tex-label" for="pais">País:</label>
+          <select id="pais" name="pais">
+            <option value="1">USA</option>
+            <option value="2">Argentina</option>
+            <option value="3">Venezuela</option>
+          </select>
+    
+          
+          <label class="tex-label" for="comentarios">Comentarios:</label>
+          <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    
+          <button type="submit">Enviar</button>
+        </form>
+      
+      </div>
+    
     </section>
   
   </main>
