@@ -1,1 +1,1 @@
-Tercera Pre-entrega del proyecto de Desarollo Web, todas las paginas son responsive, todo el codigo css fue pasado a sass, utilice Variables, Mixin y extend, coloque un formulario en la ultima pagina, modifique las imagenes de las cards.
+Proyecto Final
