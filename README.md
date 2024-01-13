@@ -1,1 +1,1 @@
-Segunda Pre-entrega del proyecto de Desarollo Web, el home y la pagina de "Anillos de Jordan" son responvie en destokp y mobile # Jordan-Segunda-Entrega
+Tercera Pre-entrega del proyecto de Desarollo Web, todas las paginas son responsive, todo el codigo css fue pasado a sass, utilice Variables, Mixin y extend, coloque un formulario en la ultima pagina, modifique las imagenes de las cards.
